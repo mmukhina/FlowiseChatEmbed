@@ -426,7 +426,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
                         </For>
                     </div>
                     <div style={{
-                        display: 'flex',
+                        display: 'none',
                         "flex-direction": 'row',
                         "align-items": 'center',
                         height: '50px',
@@ -464,7 +464,6 @@ export const Bot = (props: BotProps & { class?: string }) => {
                         onSubmit={handleSubmit}
                     />
                 </div>
-                <Badge badgeBackgroundColor={props.badgeBackgroundColor} poweredByTextColor={props.poweredByTextColor} botContainer={botContainer} />
                 <BottomSpacer ref={bottomSpacer} />
             </div>
             {sourcePopupOpen() && <Popup isOpen={sourcePopupOpen()} value={sourcePopupSrc()} onClose={() => setSourcePopupOpen(false)} />}
